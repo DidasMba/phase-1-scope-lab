@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 3,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-10-13T11:45:53.136Z",
+    "end": "2023-10-13T11:45:53.603Z",
+    "duration": 467
+  },
+  "tests": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'still not bob' to equal 'maybe bob'",
+        "showDiff": true,
+        "actual": "still not bob",
+        "expected": "maybe bob",
+        "stack": "AssertionError: expected 'still not bob' to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:31:38)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw an error",
+        "showDiff": true,
+        "expected": null,
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw an error\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'still not bob' to equal 'maybe bob'",
+        "showDiff": true,
+        "actual": "still not bob",
+        "expected": "maybe bob",
+        "stack": "AssertionError: expected 'still not bob' to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:31:38)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function: changeLeastFavoriteCustomer] to throw an error",
+        "showDiff": true,
+        "expected": null,
+        "stack": "AssertionError: expected [Function: changeLeastFavoriteCustomer] to throw an error\n    at Context.<anonymous> (test/indexTest.js:37:51)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
